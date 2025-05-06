@@ -16,8 +16,8 @@
                             @endif
 
                             <div class="text-center mb-4">
-                                <h2 class="todo fw-bold mb-4">To-Do-List</h2>
-                                <p class="text-muted">Masuk ke akun Testing</p>
+                                <h2 class="todo fw-bold mb-4">To-Do-List siapa</h2>
+                                <p class="text-muted">Masuk ke akun Anda</p>
                             </div>
 
 

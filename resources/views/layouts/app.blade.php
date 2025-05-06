@@ -17,116 +17,117 @@
 
     <!-- Custom styles -->
     <style>
-        .todo{
-            color: #6f42c1;
-        }
-        .btn-purple {
-            position: relative;
-            overflow: hidden;
-            background-color: transparent;
-            border: 2px solid #6f42c1;
-            color: #6f42c1;
-            transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-        }
+    .todo {
+        color: #1e90ff;
+    }
 
-        .btn-purple::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background-color: #6f42c1;
-            transition: left 0.3s ease-in-out;
-            z-index: 0;
-        }
+    .btn-purple {
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        border: 2px solid #1e90ff;
+        color: #1e90ff;
+        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
 
-        .btn-purple:hover {
-            color: white;
-            border-color: #6f42c1; 
-        }
+    .btn-purple::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #1e90ff, #ffffff);
+        transition: left 0.3s ease-in-out;
+        z-index: 0;
+    }
 
-        .btn-purple:hover::before {
-            left: 0;
-        }
+    .btn-purple:hover {
+        color: white;
+        border-color: #1e90ff;
+    }
 
-        .btn-purple span {
-            position: relative;
-            z-index: 1;
-        }
+    .btn-purple:hover::before {
+        left: 0;
+    }
 
+    .btn-purple span {
+        position: relative;
+        z-index: 1;
+    }
 
-        .btn-outline-purple {
-            color: #6f42c1;
-            border-color: #6f42c1;
-        }
+    .btn-outline-purple {
+        color: #1e90ff;
+        border-color: #1e90ff;
+    }
 
-        .btn-outline-purple:hover {
-            background-color: #6f42c1;
-            color: white;
-        }
+    .btn-outline-purple:hover {
+        background: linear-gradient(to right, #1e90ff, #ffffff);
+        color: white;
+    }
 
-        .form-control:focus {
-            border-color: #6f42c1;
-            box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
-        }
+    .form-control:focus {
+        border-color: #1e90ff;
+        box-shadow: 0 0 0 0.25rem rgba(30, 144, 255, 0.25);
+    }
 
-        .link-purple {
-            color:#6f42c1;
-            text-decoration: none;
-            position: relative;
-        }
+    .link-purple {
+        color: #1e90ff;
+        text-decoration: none;
+        position: relative;
+    }
 
-        .link-purple:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #6f42c1;
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 0.3s ease;
-        }
+    .link-purple:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #1e90ff;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+    }
 
-        .link-purple:hover {
-            color: #6f42c1;
-        }
+    .link-purple:hover {
+        color: #1e90ff;
+    }
 
-        .link-purple:hover:after {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
+    .link-purple:hover:after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
 
-        .feature-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6f42c1;
-        }
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom right, #1e90ff, #ffffff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1e90ff;
+    }
 
-        .auth-card {
-            border: 1px solid rgba(111, 66, 193, 0.1);
-            border-radius: 1rem;
-        }
+    .auth-card {
+        border: 1px solid rgba(30, 144, 255, 0.1);
+        border-radius: 1rem;
+    }
 
-        .auth-icon {
-            width: 64px;
-            height: 64px;
-            background-color: rgba(111, 66, 193, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6f42c1;
-            margin: 0 auto 1.5rem;
-        }
-    </style>
+    .auth-icon {
+        width: 64px;
+        height: 64px;
+        background: linear-gradient(to bottom right, #1e90ff, #ffffff);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1e90ff;
+        margin: 0 auto 1.5rem;
+    }
+</style>
+
 </head>
 
 <body class="bg-light">
