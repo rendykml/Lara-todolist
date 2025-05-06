@@ -18,7 +18,7 @@
     <!-- Custom styles -->
     <style>
     .todo {
-        color: #1e90ff;
+        color:rgb(30, 255, 124);
     }
 
     .btn-purple {
