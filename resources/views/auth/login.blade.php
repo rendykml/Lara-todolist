@@ -1,6 +1,61 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+        body {
+            background: linear-gradient(135deg, #f9a825, #f06292, #42a5f5, #66bb6a);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .auth-card {
+            background: white;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .btn-purple {
+            background: linear-gradient(90deg, #8e2de2, #4a00e0);
+            color: #fff;
+            border: none;
+            transition: 0.3s ease;
+        }
+
+        .btn-purple:hover {
+            background: linear-gradient(90deg, #4a00e0, #8e2de2);
+        }
+
+        .link-purple {
+            color: #7b1fa2;
+            font-weight: bold;
+        }
+
+        .link-purple:hover {
+            color: #4a148c;
+            text-decoration: underline;
+        }
+
+        .feature-icon i {
+            color: #ff7043;
+        }
+
+        .todo {
+            background: linear-gradient(to right, #ff6f61, #6a82fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .input-group-text {
+            background-color: #f1f1f1;
+        }
+    </style>
+
     <div class="min-vh-100 d-flex align-items-center justify-content-center py-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -16,18 +71,16 @@
                             @endif
 
                             <div class="text-center mb-4">
-                                <h2 class="todo fw-bold mb-4">To-Do-List siapa</h2>
+                                <h2 class="todo fw-bold mb-4">To-Do-List</h2>
                                 <p class="text-muted">Masuk ke akun test</p>
                             </div>
 
-
                             <form method="POST" action="{{ route('login') }}">
-
                                 @csrf
 
                                 <div class="mb-3">
                                     <div class="input-group">
-                                        <span class="input-group-text bg-light border-end-0">
+                                        <span class="input-group-text border-end-0">
                                             <i class="bi bi-person"></i>
                                         </span>
                                         <input type="text" name="login"
@@ -44,7 +97,7 @@
 
                                 <div class="mb-4">
                                     <div class="input-group">
-                                        <span class="input-group-text bg-light border-end-0">
+                                        <span class="input-group-text border-end-0">
                                             <i class="bi bi-key"></i>
                                         </span>
                                         <input type="password" name="password"
@@ -66,7 +119,6 @@
                                 </button>
 
                                 <div class="text-center">
-
                                     <a href="{{ route('register') }}" class="link-purple">
                                         Belum Punya Akun? Daftar Sekarang
                                     </a>
@@ -101,6 +153,7 @@
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
