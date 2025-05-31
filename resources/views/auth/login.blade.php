@@ -147,7 +147,7 @@
                                         <div class="col-6">
                                             <div class="d-flex align-items-center">
                                                 <div class="feature-icon me-2"><i class="bi bi-check-circle"></i></div>
-                                                <span class="small text-muted">Priority Settings</span>
+                                                <span class="small text-muted">Priority Settings.</span>
                                             </div>
                                         </div>
                                     </div>
